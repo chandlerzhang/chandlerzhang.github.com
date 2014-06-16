@@ -25,7 +25,16 @@ div#contenthead {
   height: 94px;
   border-bottom: 1px solid #eaeaea;
 }
-
+div#chword {
+  width: 500px;
+  height: 93px;
+  padding-top: 25px;
+  display: block;
+  float: left;
+  font-size: 14px;
+  font-color: #aaa;
+  font-style: italic;
+}
 div#chlogo {
   width: 250px;
   height: 100px;
