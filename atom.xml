@@ -4,7 +4,7 @@
  <title>疯章鱼Blog</title>
  <link href="http://www.fengzhangyu.com/" rel="self"/>
  <link href="http://www.fengzhangyu.com"/>
- <updated>2014-06-16T12:13:34+08:00</updated>
+ <updated>2014-06-16T16:54:42+08:00</updated>
  <id>http://www.fengzhangyu.com</id>
  <author>
    <name>Chandler</name>
@@ -13,7 +13,103 @@
 
  
  <entry>
-   <title>Sublime Text</title>
+   <title>Markdown 参考手册</title>
+   <link href="http://www.fengzhangyu.com/2014/05/16/markdown-reference"/>
+   <updated>2014-05-16T00:00:00+08:00</updated>
+   <id>http://www.fengzhangyu.com/2014/05/16/markdown-reference</id>
+   <content type="html">&lt;p&gt;语法：&lt;a href=&quot;http://zh.wikipedia.org/wiki/Markdown&quot;&gt;http://zh.wikipedia.org/wiki/Markdown&lt;/a&gt;&lt;br /&gt;
+jekyll官方的介绍: &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;http://daringfireball.net/projects/markdown/&lt;/a&gt;  &lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Jekyll参考资料</title>
+   <link href="http://www.fengzhangyu.com/2014/05/16/jekyll-reference"/>
+   <updated>2014-05-16T00:00:00+08:00</updated>
+   <id>http://www.fengzhangyu.com/2014/05/16/jekyll-reference</id>
+   <content type="html">&lt;h4 id=&quot;section&quot;&gt;常用命令&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;jekyll build  # 构建
+jekyll serve  # 启动服务，可在&amp;lt;http://localhost:4000&amp;gt;访问
+jekyll build --drafts # 构建草稿
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;textile: &lt;a href=&quot;http://textile.sitemonks.com/&quot;&gt;http://textile.sitemonks.com/&lt;/a&gt;&lt;br /&gt;
+liquid语法介绍: &lt;a href=&quot;http://docs.shopify.com/themes/liquid-basics&quot;&gt;http://docs.shopify.com/themes/liquid-basics&lt;/a&gt;&lt;br /&gt;
+变量介绍：&lt;a href=&quot;http://jekyllrb.com/docs/variables/&quot;&gt;http://jekyllrb.com/docs/variables/&lt;/a&gt;&lt;br /&gt;
+遍历BLOG举例如下：  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{% for node in site.posts %}
+&amp;lt;div class=&quot;row summary&quot;&amp;gt;
+  &amp;lt;div class=&quot;row&quot;&amp;gt;
+    &amp;lt;div class=&quot;col-xs-10&quot;&amp;gt;
+      &amp;lt;h3&amp;gt;
+        &amp;lt;a href=&quot;{{node.url}}&quot; class=&quot;summary-title&quot;&amp;gt;{{node.title}}&amp;lt;/a&amp;gt;
+      &amp;lt;/h3&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&quot;col-xs-2 text-right summary-date&quot;&amp;gt;
+      &amp;lt;span&amp;gt;{{node.date | date: &quot;%Y-%m-%d&quot;}}&amp;lt;/span&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&quot;tags&quot;&amp;gt;
+    {% for tag in node.tags %}
+    &amp;lt;a href=&quot;{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref&quot;  class=&quot;btn btn-success btn-xs&quot;&amp;gt;
+      {{ tag }} &amp;lt;span class=&quot;badge&quot;&amp;gt;{{ site.tags[tag].size }}&amp;lt;/span&amp;gt;
+    &amp;lt;/a&amp;gt;
+    {% endfor %}
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+{% endfor %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;转义大括号：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{% raw %}
+你的代码
+
+{ % endraw % }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;中文文件名报错，invalid byte sequence in US-ASCII：&lt;br /&gt;
+TODO  &lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>在线转码</title>
+   <link href="http://www.fengzhangyu.com/2014/05/16/code-coverter-online"/>
+   <updated>2014-05-16T00:00:00+08:00</updated>
+   <id>http://www.fengzhangyu.com/2014/05/16/code-coverter-online</id>
+   <content type="html">&lt;div id=&quot;asciiConvertor&quot;&gt;
+查询字符ASCII码：&lt;input id=&quot;src1&quot;&gt;&lt;buton id=&quot;assiiQueryBtn&quot; class=&quot;btn btn-xs btn-default&quot;&gt;查询&lt;/buton&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-xs-2&quot;&gt;
+  HTML编码
+  &lt;/div&gt;
+  &lt;div class=&quot;col-xs-10&quot; id=&quot;htmlOutput&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+  $(function(){
+    $(&quot;#assiiQueryBtn&quot;).click(function(){
+      var v = $(&quot;#src1&quot;).val();
+      if(v.length &lt; 1){
+        alert(&quot;请输入要转换的字符&quot;);
+      }
+      var r = &quot;&quot;;
+      for(var i=0; i &lt; v.length; i++){
+        r += &quot;&amp;amp;#&quot; + parseInt(v.charCodeAt(i)) + &quot;;&quot;;
+      }
+      $(&quot;#htmlOutput&quot;).html(r);
+    });
+  });
+&lt;/script&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Sublime Text 文本编辑器</title>
    <link href="http://www.fengzhangyu.com/2014/05/13/sublime-text"/>
    <updated>2014-05-13T00:00:00+08:00</updated>
    <id>http://www.fengzhangyu.com/2014/05/13/sublime-text</id>
@@ -110,7 +206,7 @@ Mathjax: &lt;a href=&quot;http://jianshu.io/p/378338f10263?comment=12766&quot;&g
  </entry>
  
  <entry>
-   <title>Mac Osx Shortkeys</title>
+   <title>Mac OsX 快捷键</title>
    <link href="http://www.fengzhangyu.com/2014/05/12/mac-osx-shortkeys"/>
    <updated>2014-05-12T00:00:00+08:00</updated>
    <id>http://www.fengzhangyu.com/2014/05/12/mac-osx-shortkeys</id>
@@ -146,7 +242,7 @@ Mathjax: &lt;a href=&quot;http://jianshu.io/p/378338f10263?comment=12766&quot;&g
 删除光标之前整行内容&lt;br /&gt;
 删除选中文件
 #### 退出鍵&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;Shitf-Ctrl-退出鍵&lt;/code&gt;  關閉螢幕&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Shitf-Ctrl-退出鍵&lt;/code&gt;    關閉螢幕&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;Command-Option-退出鍵&lt;/code&gt;  休眠&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;Ctrl-Command-退出鍵&lt;/code&gt;  重開機&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;Ctrl-Option-Command-退出鍵&lt;/code&gt;  關機&lt;/li&gt;
@@ -157,7 +253,7 @@ Mathjax: &lt;a href=&quot;http://jianshu.io/p/378338f10263?comment=12766&quot;&g
  </entry>
  
  <entry>
-   <title>Mac Osx Apps</title>
+   <title>Mac OsX 常用软件</title>
    <link href="http://www.fengzhangyu.com/2014/05/12/mac-osx-apps"/>
    <updated>2014-05-12T00:00:00+08:00</updated>
    <id>http://www.fengzhangyu.com/2014/05/12/mac-osx-apps</id>
@@ -409,7 +505,7 @@ Price: &lt;!--TODO--&gt;&lt;br /&gt;
  </entry>
  
  <entry>
-   <title>Linux Commands</title>
+   <title>Linux 常用命令</title>
    <link href="http://www.fengzhangyu.com/2014/05/12/linux-commands"/>
    <updated>2014-05-12T00:00:00+08:00</updated>
    <id>http://www.fengzhangyu.com/2014/05/12/linux-commands</id>

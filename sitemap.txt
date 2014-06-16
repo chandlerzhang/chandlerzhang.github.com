@@ -3,13 +3,14 @@ http://www.fengzhangyu.com/archive.html
 http://www.fengzhangyu.com/atom.xml
 http://www.fengzhangyu.com/categories.html
 http://www.fengzhangyu.com/index.html
-http://www.fengzhangyu.com/index.md.bak
-http://www.fengzhangyu.com/index2.html
 http://www.fengzhangyu.com/pages.html
 http://www.fengzhangyu.com/rss.xml
 http://www.fengzhangyu.com/sitemap.txt
 http://www.fengzhangyu.com/tags.html
 
+http://www.fengzhangyu.com/2014/05/16/markdown-reference
+http://www.fengzhangyu.com/2014/05/16/jekyll-reference
+http://www.fengzhangyu.com/2014/05/16/code-coverter-online
 http://www.fengzhangyu.com/2014/05/13/sublime-text
 http://www.fengzhangyu.com/2014/05/12/mac-osx-shortkeys
 http://www.fengzhangyu.com/2014/05/12/mac-osx-apps

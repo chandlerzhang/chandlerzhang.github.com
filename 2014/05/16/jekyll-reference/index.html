@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>标签</title> 
+<title>Jekyll参考资料</title> 
 <meta name="author" content="Chandler">
 
 <!-- Enable responsive viewport -->
@@ -79,251 +79,115 @@
       <div style="clear: both;"></div>
       <div class="container">
 <div class="page-header">
-  <h1>标签 </h1>
+  <h1>
+    Jekyll参考资料 
+  </h1>
 </div>
 
-<div class="row">
+<div class="row post-full">
   <div class="col-xs-12">
+    <div class="date">
+      <span></span>
+    </div>
+    <div class="content"><h4 id="section">常用命令</h4>
+
+<pre><code>jekyll build  # 构建
+jekyll serve  # 启动服务，可在&lt;http://localhost:4000&gt;访问
+jekyll build --drafts # 构建草稿
+</code></pre>
+
+<p>textile: <a href="http://textile.sitemonks.com/">http://textile.sitemonks.com/</a><br />
+liquid语法介绍: <a href="http://docs.shopify.com/themes/liquid-basics">http://docs.shopify.com/themes/liquid-basics</a><br />
+变量介绍：<a href="http://jekyllrb.com/docs/variables/">http://jekyllrb.com/docs/variables/</a><br />
+遍历BLOG举例如下：  </p>
+
+<pre><code>{% for node in site.posts %}
+&lt;div class="row summary"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-xs-10"&gt;
+      &lt;h3&gt;
+        &lt;a href="{{node.url}}" class="summary-title"&gt;{{node.title}}&lt;/a&gt;
+      &lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xs-2 text-right summary-date"&gt;
+      &lt;span&gt;{{node.date | date: "%Y-%m-%d"}}&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="tags"&gt;
+    {% for tag in node.tags %}
+    &lt;a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref"  class="btn btn-success btn-xs"&gt;
+      {{ tag }} &lt;span class="badge"&gt;{{ site.tags[tag].size }}&lt;/span&gt;
+    &lt;/a&gt;
+    {% endfor %}
+  &lt;/div&gt;
+&lt;/div&gt;
+{% endfor %}
+</code></pre>
+
+<p>转义大括号：</p>
+
+<pre><code>{% raw %}
+你的代码
+
+{ % endraw % }
+</code></pre>
+
+<p>中文文件名报错，invalid byte sequence in US-ASCII：<br />
+TODO  </p>
+</div>
+
     
-
-<ul class="tag_box inline">
     
-  
+    
+    <ul class="tag_box inline">
+      <li><i class="glyphicon-tags"></i></li>
+      
+      
 
 
   
-     
-    	<li><a href="/tags.html#linux-ref">linux <span>1</span></a></li>
-     
-    	<li><a href="/tags.html#信息技术-ref">信息技术 <span>4</span></a></li>
-     
-    	<li><a href="/tags.html#mac-ref">mac <span>3</span></a></li>
-     
-    	<li><a href="/tags.html#软件-ref">软件 <span>2</span></a></li>
-     
-    	<li><a href="/tags.html#sublime-ref">sublime <span>1</span></a></li>
-     
-    	<li><a href="/tags.html#在线工具-ref">在线工具 <span>1</span></a></li>
      
     	<li><a href="/tags.html#jekyll-ref">jekyll <span>1</span></a></li>
      
-    	<li><a href="/tags.html#markdown-ref">markdown <span>1</span></a></li>
+    	<li><a href="/tags.html#信息技术-ref">信息技术 <span>4</span></a></li>
     
   
 
 
 
-</ul>
+    </ul>
+    
 
-
- 
-  <h2 id="linux-ref">linux</h2>
-  <ul>
+    <hr>
+    <ul class="pagination">
       
+      <li class="prev"><a href="/2014/05/16/code-coverter-online" title="在线转码">&laquo; 在线转码</a></li> 
+      
+      <li><a href="/archive.html">所有文章</a></li> 
+      
+      <li class="next"><a href="/2014/05/16/markdown-reference" title="Markdown 参考手册">Markdown 参考手册 &raquo;</a></li> 
+      
+    </ul>
+    <hr>
     
 
 
-  
-    
-      
-      	
-      	<li><a href="/2014/05/12/linux-commands">Linux 常用命令</a></li>
-      	
-      
-    
-  
+  <div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrdOhyCF',
+    conf = 'prod_6383285691244de7b1d97aab1a12c824';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
+</script>
 
-
-
-  </ul>
- 
-  <h2 id="信息技术-ref">信息技术</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/2014/05/16/markdown-reference">Markdown 参考手册</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/2014/05/16/jekyll-reference">Jekyll参考资料</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/2014/05/16/code-coverter-online">在线转码</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/2014/05/12/linux-commands">Linux 常用命令</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="mac-ref">mac</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/2014/05/13/sublime-text">Sublime Text 文本编辑器</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/2014/05/12/mac-osx-shortkeys">Mac OsX 快捷键</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/2014/05/12/mac-osx-apps">Mac OsX 常用软件</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="软件-ref">软件</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/2014/05/13/sublime-text">Sublime Text 文本编辑器</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/2014/05/12/mac-osx-apps">Mac OsX 常用软件</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="sublime-ref">sublime</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/2014/05/13/sublime-text">Sublime Text 文本编辑器</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="在线工具-ref">在线工具</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/2014/05/16/code-coverter-online">在线转码</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="jekyll-ref">jekyll</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/2014/05/16/jekyll-reference">Jekyll参考资料</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="markdown-ref">markdown</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/2014/05/16/markdown-reference">Markdown 参考手册</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
 
 
   </div>
