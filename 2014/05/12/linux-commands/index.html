@@ -97,12 +97,26 @@
 
 <pre><code>sudo ifconfig en1 ether 64-27-37-01-1E-0F
 sudo ifconfig en1 down
-sudo ifconfig en1 up #### 当前IP `ifconfig  | grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | awk '{ print $1}'`   或   `ifconfig eth0 | grep inet | awk '{ print $2 }'` #### 创建软链接 `ln -s /Users/mac/Downloads/apache-maven-3.1.0 /usr/share/maven` #### 文件权限
+sudo ifconfig en1 up
+</code></pre>
 
-sudo chown root:wheel my.cnf
-sudo chmod 644 my.cnf #### 管理进程
+<h4 id="ip">当前IP</h4>
+<p><code>ifconfig  | grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | awk '{ print $1}'</code><br />
+或<br />
+<code>ifconfig eth0 | grep inet | awk '{ print $2 }'</code></p>
 
-ps aux | less
+<h4 id="section">创建软链接</h4>
+<p><code>ln -s /Users/mac/Downloads/apache-maven-3.1.0 /usr/share/maven</code></p>
+
+<h4 id="section-1">文件权限</h4>
+
+<pre><code>sudo chown root:wheel my.cnf
+sudo chmod 644 my.cnf
+</code></pre>
+
+<h4 id="section-2">管理进程</h4>
+
+<pre><code>ps aux | less
 ps aux | grep mysql
 sudo kill -9 2319
 </code></pre>

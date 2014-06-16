@@ -5,8 +5,8 @@
         <description>疯章鱼Blog - Chandler</description>
         <link>http://www.fengzhangyu.com</link>
         <link>http://www.fengzhangyu.com</link>
-        <lastBuildDate>2014-06-16T16:54:42+08:00</lastBuildDate>
-        <pubDate>2014-06-16T16:54:42+08:00</pubDate>
+        <lastBuildDate>2014-06-16T17:01:24+08:00</lastBuildDate>
+        <pubDate>2014-06-16T17:01:24+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -220,23 +220,35 @@ Mathjax: &lt;a href=&quot;http://jianshu.io/p/378338f10263?comment=12766&quot;&g
   &lt;li&gt;&lt;code&gt;Command-Shift-4 Space&lt;/code&gt;&lt;br /&gt;
 这时光标会变为一个照相机图标，点击可拍下当前窗口或菜单或Dock以及图标等，只要将照相机图标移动到不同区域（有效区域会显示为浅蓝色）点击。  &lt;/li&gt;
   &lt;li&gt;&lt;code&gt;Command-Shift-Control-4 Space&lt;/code&gt;&lt;br /&gt;
-将选取的窗口或其他区域的快照保存到剪贴板
-#### 浏览器&lt;/li&gt;
+将选取的窗口或其他区域的快照保存到剪贴板&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;浏览器&lt;/h4&gt;
+&lt;ul&gt;
   &lt;li&gt;&lt;code&gt;fn-Left&lt;/code&gt;  回到顶部&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;fn-Right&lt;/code&gt;  回到底部&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;fn-Up&lt;/code&gt;  往上翻滚&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;fn-Down&lt;/code&gt;  往下翻滚
-#### 输入法&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;fn-Down&lt;/code&gt;  往下翻滚&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;输入法&lt;/h4&gt;
+&lt;ul&gt;
   &lt;li&gt;&lt;code&gt;fn-Down&lt;/code&gt;  往下翻页&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;fn-Up&lt;/code&gt;  往上翻页
-#### Delete键&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;fn-Up&lt;/code&gt;  往上翻页&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;delete&quot;&gt;Delete键&lt;/h4&gt;
+&lt;ul&gt;
   &lt;li&gt;&lt;code&gt;Delete&lt;/code&gt;  实现 Windows 键盘上退格键的功能，也就是删除光标之前的一个字符（默认）；&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;fn-Delete&lt;/code&gt;  删除光标之后的一个字符；&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;Option-Delete&lt;/code&gt;  删除光标之前的一个单词（英文有效）&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;Command-Delete&lt;/code&gt;&lt;br /&gt;
 删除光标之前整行内容&lt;br /&gt;
-删除选中文件
-#### 退出鍵&lt;/li&gt;
+删除选中文件&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;section-3&quot;&gt;退出鍵&lt;/h4&gt;
+&lt;ul&gt;
   &lt;li&gt;&lt;code&gt;Shitf-Ctrl-退出鍵&lt;/code&gt;    關閉螢幕&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;Command-Option-退出鍵&lt;/code&gt;  休眠&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;Ctrl-Command-退出鍵&lt;/code&gt;  重開機&lt;/li&gt;
@@ -259,243 +271,200 @@ Mathjax: &lt;a href=&quot;http://jianshu.io/p/378338f10263?comment=12766&quot;&g
 Site: &lt;a href=&quot;http://macpaw.com/cleanmymac&quot;&gt;http://macpaw.com/cleanmymac&lt;/a&gt;&lt;br /&gt;
 Price: &lt;em&gt;$39.95&lt;/em&gt; &lt;a href=&quot;http://macpaw.com/store/cleanmymac&quot;&gt;Buy&lt;/a&gt;&lt;br /&gt;
 功能: 卸载软件，清理垃圾。卸载的干净，包括清除LaunchPad上的图标。&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### AppCleaner
-Site: &lt;a href=&quot;http://www.freemacsoft.net/appcleaner/&quot;&gt;http://www.freemacsoft.net/appcleaner/&lt;/a&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;appcleaner&quot;&gt;AppCleaner&lt;/h4&gt;
+&lt;p&gt;Site: &lt;a href=&quot;http://www.freemacsoft.net/appcleaner/&quot;&gt;http://www.freemacsoft.net/appcleaner/&lt;/a&gt;&lt;br /&gt;
 Price: free&lt;br /&gt;
-功能: 免费的删除工具，不能够删除LaunchPad上的图标，而且删之前会把相关文件都查出来，删的时候要注意点。CleanMyMac不能用的话，可以用这个。&lt;br /&gt;
-#### Spectacle
-Site: &lt;a href=&quot;http://spectacleapp.com/&quot;&gt;http://spectacleapp.com/&lt;/a&gt;&lt;br /&gt;
+功能: 免费的删除工具，不能够删除LaunchPad上的图标，而且删之前会把相关文件都查出来，删的时候要注意点。CleanMyMac不能用的话，可以用这个。  &lt;/p&gt;
+
+&lt;h4 id=&quot;spectacle&quot;&gt;Spectacle&lt;/h4&gt;
+&lt;p&gt;Site: &lt;a href=&quot;http://spectacleapp.com/&quot;&gt;http://spectacleapp.com/&lt;/a&gt;&lt;br /&gt;
 Price: free&lt;br /&gt;
-功能: 快速设置窗口大小。我只设置了一个全屏快捷键：右Option键+句号键。&lt;br /&gt;
-#### BetterZip
+功能: 快速设置窗口大小。我只设置了一个全屏快捷键：右Option键+句号键。  &lt;/p&gt;
+
+&lt;h4 id=&quot;betterzip&quot;&gt;BetterZip&lt;/h4&gt;
 &lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### XtraFinder
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### KeyRemap4MacBook
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### Private Eye
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### 硬件及保修期查询
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### Onyx
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### OmniDiskSweeper
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### TinkerTool
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### Partition Inspector
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### Sublime Text 2
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### UltraEdit
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### VMware Fusion
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### VirtualBox
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### MPlayerX
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### Vox
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### Read CHM
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### FileZilla
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### DictUnifier
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### Mou
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### CodeKit
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### Sketch
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### 4Video Video Converter
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### Adobe Photoshop CS6
-&lt;img src=&quot;http://wwwimages.adobe.com/content/dam/Adobe/images/shared/product-totems/80x80/totem-photoshop-cs6-80x80.png.adimg.mw.80.png&quot; alt=&quot;Adobe Photoshop CS6&quot; /&gt;&lt;br /&gt;
-Site: &lt;a href=&quot;http://www.adobe.com/cn/products/photoshop.html&quot;&gt;http://www.adobe.com/cn/products/photoshop.html&lt;/a&gt;&lt;br /&gt;
-Price: &lt;em&gt;¥ 4,979.52‌&lt;/em&gt; &lt;a href=&quot;http://shop.adobe.com/DRHM/store&quot;&gt;Buy&lt;/a&gt;&lt;br /&gt;
-功能: Photoshop比较新的一个版本.&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### DbVisualizer
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### TeamViewer
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### Versions
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### TODO
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### TODO
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### TODO
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### TODO
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### TODO
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### TODO
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### TODO
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### TODO
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### TODO
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### TODO
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### TODO
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
-Price: &lt;!--TODO--&gt;&lt;br /&gt;
-功能: &lt;!--TODO--&gt;&lt;br /&gt;
-破解版: &lt;!--TODO--&gt;
-#### TODO
-&lt;!--TODO--&gt;
-Site: &lt;!--TODO--&gt; 
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
 Price: &lt;!--TODO--&gt;&lt;br /&gt;
 功能: &lt;!--TODO--&gt;&lt;br /&gt;
 破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;xtrafinder&quot;&gt;XtraFinder&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;keyremap4macbook&quot;&gt;KeyRemap4MacBook&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;private-eye&quot;&gt;Private Eye&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;section&quot;&gt;硬件及保修期查询&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;onyx&quot;&gt;Onyx&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;omnidisksweeper&quot;&gt;OmniDiskSweeper&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;tinkertool&quot;&gt;TinkerTool&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;partition-inspector&quot;&gt;Partition Inspector&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;sublime-text-2&quot;&gt;Sublime Text 2&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;ultraedit&quot;&gt;UltraEdit&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;vmware-fusion&quot;&gt;VMware Fusion&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;virtualbox&quot;&gt;VirtualBox&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;mplayerx&quot;&gt;MPlayerX&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;vox&quot;&gt;Vox&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;read-chm&quot;&gt;Read CHM&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;filezilla&quot;&gt;FileZilla&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;dictunifier&quot;&gt;DictUnifier&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;mou&quot;&gt;Mou&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;codekit&quot;&gt;CodeKit&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;sketch&quot;&gt;Sketch&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;video-video-converter&quot;&gt;4Video Video Converter&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;adobe-photoshop-cs6&quot;&gt;Adobe Photoshop CS6&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;http://wwwimages.adobe.com/content/dam/Adobe/images/shared/product-totems/80x80/totem-photoshop-cs6-80x80.png.adimg.mw.80.png&quot; alt=&quot;Adobe Photoshop CS6&quot; /&gt;&lt;br /&gt;
+Site: &lt;a href=&quot;http://www.adobe.com/cn/products/photoshop.html&quot;&gt;http://www.adobe.com/cn/products/photoshop.html&lt;/a&gt;&lt;br /&gt;
+Price: &lt;em&gt;¥ 4,979.52‌&lt;/em&gt; &lt;a href=&quot;http://shop.adobe.com/DRHM/store&quot;&gt;Buy&lt;/a&gt;&lt;br /&gt;
+功能: Photoshop比较新的一个版本.&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;dbvisualizer&quot;&gt;DbVisualizer&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;teamviewer&quot;&gt;TeamViewer&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;versions&quot;&gt;Versions&lt;/h4&gt;
+&lt;!--TODO--&gt;
+&lt;p&gt;Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+
 </description>
                 <link>http://www.fengzhangyu.com/2014/05/12/mac-osx-apps</link>
                 <guid>http://www.fengzhangyu.com/2014/05/12/mac-osx-apps</guid>
@@ -512,12 +481,26 @@ Price: &lt;!--TODO--&gt;&lt;br /&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo ifconfig en1 ether 64-27-37-01-1E-0F
 sudo ifconfig en1 down
-sudo ifconfig en1 up #### 当前IP `ifconfig  | grep &#39;inet addr:&#39;| grep -v &#39;127.0.0.1&#39; | cut -d: -f2 | awk &#39;{ print $1}&#39;`   或   `ifconfig eth0 | grep inet | awk &#39;{ print $2 }&#39;` #### 创建软链接 `ln -s /Users/mac/Downloads/apache-maven-3.1.0 /usr/share/maven` #### 文件权限
+sudo ifconfig en1 up
+&lt;/code&gt;&lt;/pre&gt;
 
-sudo chown root:wheel my.cnf
-sudo chmod 644 my.cnf #### 管理进程
+&lt;h4 id=&quot;ip&quot;&gt;当前IP&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;ifconfig  | grep &#39;inet addr:&#39;| grep -v &#39;127.0.0.1&#39; | cut -d: -f2 | awk &#39;{ print $1}&#39;&lt;/code&gt;&lt;br /&gt;
+或&lt;br /&gt;
+&lt;code&gt;ifconfig eth0 | grep inet | awk &#39;{ print $2 }&#39;&lt;/code&gt;&lt;/p&gt;
 
-ps aux | less
+&lt;h4 id=&quot;section&quot;&gt;创建软链接&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;ln -s /Users/mac/Downloads/apache-maven-3.1.0 /usr/share/maven&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;文件权限&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo chown root:wheel my.cnf
+sudo chmod 644 my.cnf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;管理进程&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;ps aux | less
 ps aux | grep mysql
 sudo kill -9 2319
 &lt;/code&gt;&lt;/pre&gt;
