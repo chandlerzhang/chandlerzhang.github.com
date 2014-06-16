@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>疯章鱼Blog</title>
+ <link href="http://www.fengzhangyu.com/" rel="self"/>
+ <link href="http://www.fengzhangyu.com"/>
+ <updated>2014-06-16T12:13:34+08:00</updated>
+ <id>http://www.fengzhangyu.com</id>
+ <author>
+   <name>Chandler</name>
+   <email>yizhitunshu@163.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Sublime Text</title>
+   <link href="http://www.fengzhangyu.com/2014/05/13/sublime-text"/>
+   <updated>2014-05-13T00:00:00+08:00</updated>
+   <id>http://www.fengzhangyu.com/2014/05/13/sublime-text</id>
+   <content type="html">&lt;h2 id=&quot;sublime-text-&quot;&gt;Sublime Text 安装&lt;/h2&gt;
+
+&lt;h4 id=&quot;sublime-text-3&quot;&gt;安装 Sublime Text 3&lt;/h4&gt;
+&lt;p&gt;SITE: http://www.sublimetext.com/3&lt;br /&gt;
+资料：&lt;a href=&quot;http://www.webrube.com/articles/18&quot;&gt;http://www.webrube.com/articles/18&lt;/a&gt;&lt;br /&gt;
+经测试，下面的破解Sublime 2的方法在Sublime 3里不能用&lt;br /&gt;
+Sublime Package Control的安装代码，见&lt;a href=&quot;https://sublime.wbond.net/installation&quot;&gt;https://sublime.wbond.net/installation&lt;/a&gt;  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import urllib.request,os,hashlib; h = &#39;7183a2d3e96f11eeadd761d777e62404&#39; + &#39;e330c659d4bb41d3bdf022e94cab3cd0&#39;; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &#39;http://sublime.wbond.net/&#39; + pf.replace(&#39; &#39;, &#39;%20&#39;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&#39;Error validating download (got %s instead of %s), please try manual install&#39; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &#39;wb&#39; ).write(by)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;sublime-text-2&quot;&gt;安装 Sublime Text 2&lt;/h4&gt;
+&lt;p&gt;到官网&lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;http://www.sublimetext.com/&lt;/a&gt;下载最新版，当前为2.0.2，并安装。&lt;/p&gt;
+
+&lt;h4 id=&quot;sublime-text-2-1&quot;&gt;破解 Sublime Text 2&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;安装完成后，在application下找到Sublime Text，右键选择显示contents，然后根据此路径 Sublime Text 2/Contents/MacOS/，在MacOS文件夹中找到名为Sublime Text 2的文件（这货是个二进制文件），选择用Sublime Text自己打开该文件。&lt;/li&gt;
+  &lt;li&gt;用快捷键 Cmd+Option+F 打开Find &amp;amp; Replace Pane，在文件中搜索所有3342 3032，将其都替换为3242 3032。保存后关闭并退出Sublime Text。&lt;/li&gt;
+  &lt;li&gt;重新运行Sublime Text，在菜单栏中点击help，然后enter license，把注册码粘贴进去即可（包含BEGIN LICENSE 和 END LICENSE头尾两行）。以下注册码亲测可用，仅供参考。完成！&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Code&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;—–BEGIN LICENSE—–
+hiwanz
+Unlimited User License
+EA7E-26838
+5B320641E6E11F5C6E16553C438A6839
+72BA70FE439203367920D70E7DEB0E92
+436D756177BBE49EFC9FBBB3420DB9D3
+6AA8307E845B6AB8AF99D81734EEA961
+02402C853F1FFF9854D94799D1317F37
+1DAB52730F6CADDE701BF3BE03C34EF2
+85E053D2B5E16502F4B009DE413591DE
+0840D6E2CBF0A3049E2FAD940A53FF67
+—–END LICENSE—–
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;section&quot;&gt;解决中文乱码&lt;/h4&gt;
+&lt;p&gt;首先声明：这一方法前提是sublime text 2的安装路径没有中文字符，且系统路径的%username%中不包含中文字符。否则需要手动添加转换包，这个稍后说明。 &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;安装Sublime Package Control: 在Sublime Text 2上用Ctrl+～打开控制台并在里面输入以下代码，Sublime Text 2就会自动安装Package Control&lt;/li&gt;
+  &lt;li&gt;重启Sublime Text 2&lt;/li&gt;
+  &lt;li&gt;然后使用Ctrl+Shift+P打开命令行模式，在里面输入Install Package即可搜索需要的Package。&lt;/li&gt;
+  &lt;li&gt;一般使用“ConvertToUTF8”或“GBK Encoding Support”即可正常读取和写入CJK格式的文件&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;code&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import urllib2,os; pf=&#39;Package Control.sublime-package&#39;; ipp=sublime.installed_packages_path();  os.makedirs(ipp) if not os.path.exists(ipp) else None;   urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),&#39;wb&#39;).write(urllib2.urlopen(&#39;http://sublime.wbond.net/&#39;+pf.replace(&#39; &#39;,&#39;%20&#39;)).read()); print(&#39;Please restart Sublime Text to finish installation&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果Sublime Text 2被安装在有中文的路径下，或者系统路径的%username%包含中文字符的话，则需要进行手动安装。 还是要先安装Sublime Package Control，可以尝试用上面的安装方法，然后检查是否安装成功。检查方法很简单：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;打开Sublime Text 2，选择Preferences菜单，并选择 Browse Packages…&lt;/li&gt;
+  &lt;li&gt;系统会打开Sublime Text 2的Packages文件夹，回到上一级菜单，然后打开Installed Packages文件夹&lt;/li&gt;
+  &lt;li&gt;如果该文件夹下有Package Control.sublime-package文件即说明安装成功。
+否则需要手动安装Sublime Package Control，也很简单：下载Package Control.sublime-package（百度一下）并将下载的文件拷贝到Installed Packages文件夹下。
+手动安装类型转换包：比如“ConvertToUTF8”或“GBK Encoding Support”随便从网上下一个，拷贝到Sublime Text 2的Packages目录下即可。&lt;/li&gt;
+  &lt;li&gt;重启Sublime Text 2。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;在新标签页中打开新文件&lt;/h4&gt;
+&lt;p&gt;在Preferences -&amp;gt; Settings - User 中加入如下：  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&quot;open_files_in_new_window&quot;: false,
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;jade-syntax-highlighting&quot;&gt;jade syntax highlighting&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
+git clone https://github.com/davidrios/jade-tmbundle Jade Bonus to get stylus syntax highlighting working run:   `git clone https://github.com/LearnBoost/stylus.git Stylus`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;插件&lt;/h4&gt;
+&lt;p&gt;官方排行榜：&lt;a href=&quot;https://sublime.wbond.net/browse/popular&quot;&gt;https://sublime.wbond.net/browse/popular&lt;/a&gt;&lt;br /&gt;
+CTags html插件&lt;br /&gt;
+JsFormat&lt;br /&gt;
+CSSFormat&lt;br /&gt;
+EsFormat  &lt;/p&gt;
+
+&lt;h4 id=&quot;todo-&quot;&gt;TODO 待整理资料&lt;/h4&gt;
+&lt;p&gt;快捷键：&lt;a href=&quot;http://blog.useasp.net/archive/2013/06/14/sublime-text-2-all-default-Shortcuts-table-on-windows-translated-with-chinese.aspx&quot;&gt;http://blog.useasp.net/archive/2013/06/14/sublime-text-2-all-default-Shortcuts-table-on-windows-translated-with-chinese.aspx&lt;/a&gt;&lt;br /&gt;
+入门：&lt;a href=&quot;http://lucifr.com/2011/08/31/sublime-text-2-tricks-and-tips/&quot;&gt;http://lucifr.com/2011/08/31/sublime-text-2-tricks-and-tips/&lt;/a&gt;&lt;br /&gt;
+官方演示：&lt;a href=&quot;http://courses.tutsplus.com/courses/perfect-workflow-in-sublime-text-2&quot;&gt;http://courses.tutsplus.com/courses/perfect-workflow-in-sublime-text-2&lt;/a&gt;&lt;br /&gt;
+Markdown语法高亮：&lt;a href=&quot;http://code-tech.diandian.com/post/2012-11-10/40041958361&quot;&gt;http://code-tech.diandian.com/post/2012-11-10/40041958361&lt;/a&gt;&lt;br /&gt;
+Mathjax: &lt;a href=&quot;http://jianshu.io/p/378338f10263?comment=12766&quot;&gt;http://jianshu.io/p/378338f10263?comment=12766&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mac Osx Shortkeys</title>
+   <link href="http://www.fengzhangyu.com/2014/05/12/mac-osx-shortkeys"/>
+   <updated>2014-05-12T00:00:00+08:00</updated>
+   <id>http://www.fengzhangyu.com/2014/05/12/mac-osx-shortkeys</id>
+   <content type="html">&lt;h2 id=&quot;mac-&quot;&gt;MAC 常用快捷键&lt;/h2&gt;
+
+&lt;h4 id=&quot;section&quot;&gt;截图&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;Command-Shift-3&lt;/code&gt;&lt;br /&gt;
+将整个屏幕拍下并保存到桌面&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Command-Shift-Control-3&lt;/code&gt;&lt;br /&gt;
+将整个屏幕拍下并保存到剪贴板(Clipboard)，你可以Command+V直接粘贴到如Photoshop等软件中编辑。  &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Command-Shift-4&lt;/code&gt;&lt;br /&gt;
+将屏幕的一部分拍下并保存到桌面。按下这个组合键后，光标会变为一个十字，你可以拖拉来选取拍摄区域。   &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Command-Shift-Control-4&lt;/code&gt;&lt;br /&gt;
+将屏幕的一部分拍下并保存到剪贴板。  &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Command-Shift-4 Space&lt;/code&gt;&lt;br /&gt;
+这时光标会变为一个照相机图标，点击可拍下当前窗口或菜单或Dock以及图标等，只要将照相机图标移动到不同区域（有效区域会显示为浅蓝色）点击。  &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Command-Shift-Control-4 Space&lt;/code&gt;&lt;br /&gt;
+将选取的窗口或其他区域的快照保存到剪贴板
+#### 浏览器&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;fn-Left&lt;/code&gt;  回到顶部&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;fn-Right&lt;/code&gt;  回到底部&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;fn-Up&lt;/code&gt;  往上翻滚&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;fn-Down&lt;/code&gt;  往下翻滚
+#### 输入法&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;fn-Down&lt;/code&gt;  往下翻页&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;fn-Up&lt;/code&gt;  往上翻页
+#### Delete键&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Delete&lt;/code&gt;  实现 Windows 键盘上退格键的功能，也就是删除光标之前的一个字符（默认）；&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;fn-Delete&lt;/code&gt;  删除光标之后的一个字符；&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Option-Delete&lt;/code&gt;  删除光标之前的一个单词（英文有效）&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Command-Delete&lt;/code&gt;&lt;br /&gt;
+删除光标之前整行内容&lt;br /&gt;
+删除选中文件
+#### 退出鍵&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Shitf-Ctrl-退出鍵&lt;/code&gt;  關閉螢幕&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Command-Option-退出鍵&lt;/code&gt;  休眠&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Ctrl-Command-退出鍵&lt;/code&gt;  重開機&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Ctrl-Option-Command-退出鍵&lt;/code&gt;  關機&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Shift-Command-Q&lt;/code&gt;  登出目前帳戶&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mac Osx Apps</title>
+   <link href="http://www.fengzhangyu.com/2014/05/12/mac-osx-apps"/>
+   <updated>2014-05-12T00:00:00+08:00</updated>
+   <id>http://www.fengzhangyu.com/2014/05/12/mac-osx-apps</id>
+   <content type="html">&lt;h2 id=&quot;mac-&quot;&gt;MAC 常用软件&lt;/h2&gt;
+
+&lt;h4 id=&quot;cleanmymac-2&quot;&gt;CleanMyMac 2&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;http://macpaw.com/img/main/products/cleanmymac.png&quot; alt=&quot;CleanMyMac 2&quot; /&gt;&lt;br /&gt;
+Site: &lt;a href=&quot;http://macpaw.com/cleanmymac&quot;&gt;http://macpaw.com/cleanmymac&lt;/a&gt;&lt;br /&gt;
+Price: &lt;em&gt;$39.95&lt;/em&gt; &lt;a href=&quot;http://macpaw.com/store/cleanmymac&quot;&gt;Buy&lt;/a&gt;&lt;br /&gt;
+功能: 卸载软件，清理垃圾。卸载的干净，包括清除LaunchPad上的图标。&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### AppCleaner
+Site: &lt;a href=&quot;http://www.freemacsoft.net/appcleaner/&quot;&gt;http://www.freemacsoft.net/appcleaner/&lt;/a&gt;&lt;br /&gt;
+Price: free&lt;br /&gt;
+功能: 免费的删除工具，不能够删除LaunchPad上的图标，而且删之前会把相关文件都查出来，删的时候要注意点。CleanMyMac不能用的话，可以用这个。&lt;br /&gt;
+#### Spectacle
+Site: &lt;a href=&quot;http://spectacleapp.com/&quot;&gt;http://spectacleapp.com/&lt;/a&gt;&lt;br /&gt;
+Price: free&lt;br /&gt;
+功能: 快速设置窗口大小。我只设置了一个全屏快捷键：右Option键+句号键。&lt;br /&gt;
+#### BetterZip
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### XtraFinder
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### KeyRemap4MacBook
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### Private Eye
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### 硬件及保修期查询
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### Onyx
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### OmniDiskSweeper
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### TinkerTool
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### Partition Inspector
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### Sublime Text 2
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### UltraEdit
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### VMware Fusion
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### VirtualBox
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### MPlayerX
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### Vox
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### Read CHM
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### FileZilla
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### DictUnifier
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### Mou
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### CodeKit
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### Sketch
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### 4Video Video Converter
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### Adobe Photoshop CS6
+&lt;img src=&quot;http://wwwimages.adobe.com/content/dam/Adobe/images/shared/product-totems/80x80/totem-photoshop-cs6-80x80.png.adimg.mw.80.png&quot; alt=&quot;Adobe Photoshop CS6&quot; /&gt;&lt;br /&gt;
+Site: &lt;a href=&quot;http://www.adobe.com/cn/products/photoshop.html&quot;&gt;http://www.adobe.com/cn/products/photoshop.html&lt;/a&gt;&lt;br /&gt;
+Price: &lt;em&gt;¥ 4,979.52‌&lt;/em&gt; &lt;a href=&quot;http://shop.adobe.com/DRHM/store&quot;&gt;Buy&lt;/a&gt;&lt;br /&gt;
+功能: Photoshop比较新的一个版本.&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### DbVisualizer
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### TeamViewer
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### Versions
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### TODO
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### TODO
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### TODO
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### TODO
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### TODO
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### TODO
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### TODO
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### TODO
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### TODO
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### TODO
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### TODO
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;
+#### TODO
+&lt;!--TODO--&gt;
+Site: &lt;!--TODO--&gt; 
+Price: &lt;!--TODO--&gt;&lt;br /&gt;
+功能: &lt;!--TODO--&gt;&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Linux Commands</title>
+   <link href="http://www.fengzhangyu.com/2014/05/12/linux-commands"/>
+   <updated>2014-05-12T00:00:00+08:00</updated>
+   <id>http://www.fengzhangyu.com/2014/05/12/linux-commands</id>
+   <content type="html">&lt;h2 id=&quot;linux-&quot;&gt;Linux 常用命令&lt;/h2&gt;
+
+&lt;h4 id=&quot;mac&quot;&gt;修改网卡MAC地址&lt;/h4&gt;
+&lt;p&gt;举例：把网卡en1的mac地址改为&lt;code&gt;64-27-37-01-1E-0F&lt;/code&gt;。&lt;br /&gt;
+命令：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo ifconfig en1 ether 64-27-37-01-1E-0F
+sudo ifconfig en1 down
+sudo ifconfig en1 up #### 当前IP `ifconfig  | grep &#39;inet addr:&#39;| grep -v &#39;127.0.0.1&#39; | cut -d: -f2 | awk &#39;{ print $1}&#39;`   或   `ifconfig eth0 | grep inet | awk &#39;{ print $2 }&#39;` #### 创建软链接 `ln -s /Users/mac/Downloads/apache-maven-3.1.0 /usr/share/maven` #### 文件权限
+
+sudo chown root:wheel my.cnf
+sudo chmod 644 my.cnf #### 管理进程
+
+ps aux | less
+ps aux | grep mysql
+sudo kill -9 2319
+&lt;/code&gt;&lt;/pre&gt;
+
+</content>
+ </entry>
+ 
+ 
+</feed>

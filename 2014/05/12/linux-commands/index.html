@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>home</title> 
+<title>Linux Commands</title> 
 <meta name="author" content="Chandler">
 
 <!-- Enable responsive viewport -->
@@ -162,98 +162,94 @@ div.summary .summary-date {
         </div>
       </div>
       <div style="clear: both;"></div>
-      <div class="container"> 
-<div class="row summary">
-  <div class="row">
-    <div class="col-xs-10">
-      <h3>
-        <a href="/2014/05/13/sublime-text" class="summary-title">Sublime Text</a>
-      </h3>
+      <div class="container">
+<div class="page-header">
+  <h1>
+    Linux Commands 
+  </h1>
+</div>
+
+<div class="row post-full">
+  <div class="col-xs-12">
+    <div class="date">
+      <span></span>
     </div>
-    <div class="col-xs-2 text-right summary-date">
-      <span>2014-05-13</span>
-    </div>
-  </div>
-  <div class="tags">
+    <div class="content"><h2 id="linux-">Linux 常用命令</h2>
+
+<h4 id="mac">修改网卡MAC地址</h4>
+<p>举例：把网卡en1的mac地址改为<code>64-27-37-01-1E-0F</code>。<br />
+命令：</p>
+
+<pre><code>sudo ifconfig en1 ether 64-27-37-01-1E-0F
+sudo ifconfig en1 down
+sudo ifconfig en1 up #### 当前IP `ifconfig  | grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | awk '{ print $1}'`   或   `ifconfig eth0 | grep inet | awk '{ print $2 }'` #### 创建软链接 `ln -s /Users/mac/Downloads/apache-maven-3.1.0 /usr/share/maven` #### 文件权限
+
+sudo chown root:wheel my.cnf
+sudo chmod 644 my.cnf #### 管理进程
+
+ps aux | less
+ps aux | grep mysql
+sudo kill -9 2319
+</code></pre>
+
+</div>
+
     
-    <a href="/tags.html#sublime-ref"  class="btn btn-success btn-xs">
-      sublime <span class="badge">1</span>
-    </a>
     
-    <a href="/tags.html#mac-ref"  class="btn btn-success btn-xs">
-      mac <span class="badge">3</span>
-    </a>
     
-    <a href="/tags.html#软件-ref"  class="btn btn-success btn-xs">
-      软件 <span class="badge">2</span>
-    </a>
+    <ul class="tag_box inline">
+      <li><i class="glyphicon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/tags.html#linux-ref">linux <span>1</span></a></li>
     
+  
+
+
+
+    </ul>
+    
+
+    <hr>
+    <ul class="pagination">
+      
+      <li class="prev disabled"><a>&larr; 上一篇</a></li> 
+      
+      <li><a href="/archive.html">所有文章</a></li> 
+      
+      <li class="next"><a href="/2014/05/12/mac-osx-apps" title="Mac Osx Apps">Mac Osx Apps &raquo;</a></li> 
+      
+    </ul>
+    <hr>
+    
+
+
+  <!--高速版，加载速度快，使用前需测试页面的兼容性-->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrdOhyCF',
+    conf = 'prod_6383285691244de7b1d97aab1a12c824';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
+</script>
+
+
+
   </div>
 </div>
 
-<div class="row summary">
-  <div class="row">
-    <div class="col-xs-10">
-      <h3>
-        <a href="/2014/05/12/mac-osx-shortkeys" class="summary-title">Mac Osx Shortkeys</a>
-      </h3>
-    </div>
-    <div class="col-xs-2 text-right summary-date">
-      <span>2014-05-12</span>
-    </div>
-  </div>
-  <div class="tags">
-    
-    <a href="/tags.html#mac-ref"  class="btn btn-success btn-xs">
-      mac <span class="badge">3</span>
-    </a>
-    
-  </div>
-</div>
-
-<div class="row summary">
-  <div class="row">
-    <div class="col-xs-10">
-      <h3>
-        <a href="/2014/05/12/mac-osx-apps" class="summary-title">Mac Osx Apps</a>
-      </h3>
-    </div>
-    <div class="col-xs-2 text-right summary-date">
-      <span>2014-05-12</span>
-    </div>
-  </div>
-  <div class="tags">
-    
-    <a href="/tags.html#mac-ref"  class="btn btn-success btn-xs">
-      mac <span class="badge">3</span>
-    </a>
-    
-    <a href="/tags.html#软件-ref"  class="btn btn-success btn-xs">
-      软件 <span class="badge">2</span>
-    </a>
-    
-  </div>
-</div>
-
-<div class="row summary">
-  <div class="row">
-    <div class="col-xs-10">
-      <h3>
-        <a href="/2014/05/12/linux-commands" class="summary-title">Linux Commands</a>
-      </h3>
-    </div>
-    <div class="col-xs-2 text-right summary-date">
-      <span>2014-05-12</span>
-    </div>
-  </div>
-  <div class="tags">
-    
-    <a href="/tags.html#linux-ref"  class="btn btn-success btn-xs">
-      linux <span class="badge">1</span>
-    </a>
-    
-  </div>
-</div>
 </div>
     </div>
     <div id="footer">
