@@ -4,13 +4,44 @@
  <title>疯章鱼Blog</title>
  <link href="http://www.fengzhangyu.com/" rel="self"/>
  <link href="http://www.fengzhangyu.com"/>
- <updated>2014-06-16T17:18:59+08:00</updated>
+ <updated>2014-06-16T22:01:28+08:00</updated>
  <id>http://www.fengzhangyu.com</id>
  <author>
    <name>Chandler</name>
    <email>yizhitunshu@163.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Nginx 开发笔记</title>
+   <link href="http://www.fengzhangyu.com/2014/05/16/nginx"/>
+   <updated>2014-05-16T00:00:00+08:00</updated>
+   <id>http://www.fengzhangyu.com/2014/05/16/nginx</id>
+   <content type="html">&lt;p&gt;http://nginx.org/en/docs/configure.html&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/derekchen/archive/2011/02/17/1957209.html&quot;&gt;Nginx启动命令&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo port install nginx
+
+A sample nginx configuration file has been installed in
+    /opt/local/etc/nginx/nginx.conf.default.
+Copy the configuration to
+    /opt/local/etc/nginx/nginx.conf
+and adjust it to your needs before starting nginx.
+
+sudo cp nginx.conf.default nginx.conf
+
+sudo chmod 666 nginx.conf
+
+sudo cp mime.types.default mime.types
+
+sudo nginx
+sudo nginx -s stop
+sudo nginx -s reload
+&lt;/code&gt;&lt;/pre&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Markdown 参考手册</title>
@@ -105,6 +136,46 @@ TODO  &lt;/p&gt;
     });
   });
 &lt;/script&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Apache 笔记</title>
+   <link href="http://www.fengzhangyu.com/2014/05/16/apache"/>
+   <updated>2014-05-16T00:00:00+08:00</updated>
+   <id>http://www.fengzhangyu.com/2014/05/16/apache</id>
+   <content type="html">&lt;h4 id=&quot;macapache&quot;&gt;Mac下的Apache&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apachectl -v  # 查看apache版本
+sudo apachectl start  # 启动
+sudo apachectl stop  # 停止
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;section&quot;&gt;虚拟主机配置示例&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;# 修改http.conf
+Listen 8092 # 增加端口监控
+Include /private/etc/apache2/other/*.conf # 增加配置文件
+
+
+# 在other目录下建一个虚拟主机的配置文件 如：test1.conf
+NameVirtualHost *:8092
+&amp;lt;VirtualHost *:8092&amp;gt;
+    ServerAdmin test@163.com
+    DocumentRoot &quot;/Users/path-of-web-content&quot;
+    ServerName localhost
+    ServerAlias localhost
+    ErrorLog &quot;/private/var/log/apache2/log-name-error_log&quot;
+    CustomLog &quot;/private/var/log/apache2/log-name-access_log&quot; common
+    &amp;lt;Directory &quot;/Users/path-of-web-content&quot;&amp;gt;
+        Options None
+        AllowOverride None
+        Order allow,deny
+        Allow from all
+    &amp;lt;/Directory&amp;gt;
+&amp;lt;/VirtualHost&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
 </content>
  </entry>
  

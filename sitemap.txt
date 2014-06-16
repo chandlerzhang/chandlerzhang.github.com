@@ -8,9 +8,11 @@ http://www.fengzhangyu.com/rss.xml
 http://www.fengzhangyu.com/sitemap.txt
 http://www.fengzhangyu.com/tags.html
 
+http://www.fengzhangyu.com/2014/05/16/nginx
 http://www.fengzhangyu.com/2014/05/16/markdown-reference
 http://www.fengzhangyu.com/2014/05/16/jekyll-reference
 http://www.fengzhangyu.com/2014/05/16/code-coverter-online
+http://www.fengzhangyu.com/2014/05/16/apache
 http://www.fengzhangyu.com/2014/05/13/sublime-text
 http://www.fengzhangyu.com/2014/05/12/mac-osx-shortkeys
 http://www.fengzhangyu.com/2014/05/12/mac-osx-apps

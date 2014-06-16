@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>在线转码</title> 
+<title>Apache 笔记</title> 
 <meta name="author" content="Chandler">
 
 <!-- Enable responsive viewport -->
@@ -84,7 +84,7 @@
       <div class="container">
 <div class="page-header">
   <h1>
-    在线转码 
+    Apache 笔记 
   </h1>
 </div>
 
@@ -93,31 +93,38 @@
     <div class="date">
       <span></span>
     </div>
-    <div class="content"><div id="asciiConvertor">
-查询字符ASCII码：<input id="src1"><buton id="assiiQueryBtn" class="btn btn-xs btn-default">查询</buton>
-<div class="row">
-  <div class="col-xs-2">
-  HTML编码
-  </div>
-  <div class="col-xs-10" id="htmlOutput">
-  </div>
-</div>
-</div>
-<script>
-  $(function(){
-    $("#assiiQueryBtn").click(function(){
-      var v = $("#src1").val();
-      if(v.length < 1){
-        alert("请输入要转换的字符");
-      }
-      var r = "";
-      for(var i=0; i < v.length; i++){
-        r += "&amp;#" + parseInt(v.charCodeAt(i)) + ";";
-      }
-      $("#htmlOutput").html(r);
-    });
-  });
-</script>
+    <div class="content"><h4 id="macapache">Mac下的Apache</h4>
+
+<pre><code>sudo apachectl -v  # 查看apache版本
+sudo apachectl start  # 启动
+sudo apachectl stop  # 停止
+</code></pre>
+
+<h4 id="section">虚拟主机配置示例</h4>
+
+<pre><code># 修改http.conf
+Listen 8092 # 增加端口监控
+Include /private/etc/apache2/other/*.conf # 增加配置文件
+
+
+# 在other目录下建一个虚拟主机的配置文件 如：test1.conf
+NameVirtualHost *:8092
+&lt;VirtualHost *:8092&gt;
+    ServerAdmin test@163.com
+    DocumentRoot "/Users/path-of-web-content"
+    ServerName localhost
+    ServerAlias localhost
+    ErrorLog "/private/var/log/apache2/log-name-error_log"
+    CustomLog "/private/var/log/apache2/log-name-access_log" common
+    &lt;Directory "/Users/path-of-web-content"&gt;
+        Options None
+        AllowOverride None
+        Order allow,deny
+        Allow from all
+    &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</code></pre>
+
 </div>
 
     
@@ -131,7 +138,7 @@
 
   
      
-    	<li><a href="/tags.html#在线工具-ref">在线工具 <span>1</span></a></li>
+    	<li><a href="/tags.html#Apache-ref">Apache <span>1</span></a></li>
      
     	<li><a href="/tags.html#信息技术-ref">信息技术 <span>6</span></a></li>
     
@@ -145,11 +152,11 @@
     <hr>
     <ul class="pagination">
       
-      <li class="prev"><a href="/2014/05/16/apache" title="Apache 笔记">&laquo; Apache 笔记</a></li> 
+      <li class="prev"><a href="/2014/05/13/sublime-text" title="Sublime Text 文本编辑器">&laquo; Sublime Text 文本编辑器</a></li> 
       
       <li><a href="/archive.html">所有文章</a></li> 
       
-      <li class="next"><a href="/2014/05/16/jekyll-reference" title="Jekyll参考资料">Jekyll参考资料 &raquo;</a></li> 
+      <li class="next"><a href="/2014/05/16/code-coverter-online" title="在线转码">在线转码 &raquo;</a></li> 
       
     </ul>
     <hr>

@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>在线转码</title> 
+<title>Nginx 开发笔记</title> 
 <meta name="author" content="Chandler">
 
 <!-- Enable responsive viewport -->
@@ -84,7 +84,7 @@
       <div class="container">
 <div class="page-header">
   <h1>
-    在线转码 
+    Nginx 开发笔记 
   </h1>
 </div>
 
@@ -93,31 +93,29 @@
     <div class="date">
       <span></span>
     </div>
-    <div class="content"><div id="asciiConvertor">
-查询字符ASCII码：<input id="src1"><buton id="assiiQueryBtn" class="btn btn-xs btn-default">查询</buton>
-<div class="row">
-  <div class="col-xs-2">
-  HTML编码
-  </div>
-  <div class="col-xs-10" id="htmlOutput">
-  </div>
-</div>
-</div>
-<script>
-  $(function(){
-    $("#assiiQueryBtn").click(function(){
-      var v = $("#src1").val();
-      if(v.length < 1){
-        alert("请输入要转换的字符");
-      }
-      var r = "";
-      for(var i=0; i < v.length; i++){
-        r += "&amp;#" + parseInt(v.charCodeAt(i)) + ";";
-      }
-      $("#htmlOutput").html(r);
-    });
-  });
-</script>
+    <div class="content"><p>http://nginx.org/en/docs/configure.html</p>
+
+<p><a href="http://www.cnblogs.com/derekchen/archive/2011/02/17/1957209.html">Nginx启动命令</a></p>
+
+<pre><code>sudo port install nginx
+
+A sample nginx configuration file has been installed in
+    /opt/local/etc/nginx/nginx.conf.default.
+Copy the configuration to
+    /opt/local/etc/nginx/nginx.conf
+and adjust it to your needs before starting nginx.
+
+sudo cp nginx.conf.default nginx.conf
+
+sudo chmod 666 nginx.conf
+
+sudo cp mime.types.default mime.types
+
+sudo nginx
+sudo nginx -s stop
+sudo nginx -s reload
+</code></pre>
+
 </div>
 
     
@@ -131,7 +129,7 @@
 
   
      
-    	<li><a href="/tags.html#在线工具-ref">在线工具 <span>1</span></a></li>
+    	<li><a href="/tags.html#Nginx-ref">Nginx <span>1</span></a></li>
      
     	<li><a href="/tags.html#信息技术-ref">信息技术 <span>6</span></a></li>
     
@@ -145,11 +143,11 @@
     <hr>
     <ul class="pagination">
       
-      <li class="prev"><a href="/2014/05/16/apache" title="Apache 笔记">&laquo; Apache 笔记</a></li> 
+      <li class="prev"><a href="/2014/05/16/markdown-reference" title="Markdown 参考手册">&laquo; Markdown 参考手册</a></li> 
       
       <li><a href="/archive.html">所有文章</a></li> 
       
-      <li class="next"><a href="/2014/05/16/jekyll-reference" title="Jekyll参考资料">Jekyll参考资料 &raquo;</a></li> 
+      <li class="next disabled"><a>下一篇 &rarr;</a> 
       
     </ul>
     <hr>
