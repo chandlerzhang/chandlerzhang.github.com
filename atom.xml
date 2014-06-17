@@ -4,7 +4,7 @@
  <title>阿布耶Blog</title>
  <link href="http://www.abuye.com/" rel="self"/>
  <link href="http://www.abuye.com"/>
- <updated>2014-06-17T13:41:16+08:00</updated>
+ <updated>2014-06-17T21:56:17+08:00</updated>
  <id>http://www.abuye.com</id>
  <author>
    <name>Chandler</name>
@@ -184,9 +184,7 @@ NameVirtualHost *:8092
    <link href="http://www.abuye.com/2014/05/13/sublime-text"/>
    <updated>2014-05-13T00:00:00+08:00</updated>
    <id>http://www.abuye.com/2014/05/13/sublime-text</id>
-   <content type="html">&lt;h2 id=&quot;sublime-text-&quot;&gt;Sublime Text 安装&lt;/h2&gt;
-
-&lt;h4 id=&quot;sublime-text-3&quot;&gt;安装 Sublime Text 3&lt;/h4&gt;
+   <content type="html">&lt;h4 id=&quot;sublime-text-3&quot;&gt;安装 Sublime Text 3&lt;/h4&gt;
 &lt;p&gt;SITE: http://www.sublimetext.com/3&lt;br /&gt;
 资料：&lt;a href=&quot;http://www.webrube.com/articles/18&quot;&gt;http://www.webrube.com/articles/18&lt;/a&gt;&lt;br /&gt;
 经测试，下面的破解Sublime 2的方法在Sublime 3里不能用&lt;br /&gt;
@@ -281,9 +279,7 @@ Mathjax: &lt;a href=&quot;http://jianshu.io/p/378338f10263?comment=12766&quot;&g
    <link href="http://www.abuye.com/2014/05/12/mac-osx-shortkeys"/>
    <updated>2014-05-12T00:00:00+08:00</updated>
    <id>http://www.abuye.com/2014/05/12/mac-osx-shortkeys</id>
-   <content type="html">&lt;h2 id=&quot;mac-&quot;&gt;MAC 常用快捷键&lt;/h2&gt;
-
-&lt;h4 id=&quot;section&quot;&gt;截图&lt;/h4&gt;
+   <content type="html">&lt;h4 id=&quot;section&quot;&gt;截图&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;code&gt;Command-Shift-3&lt;/code&gt;&lt;br /&gt;
 将整个屏幕拍下并保存到桌面&lt;/li&gt;
@@ -340,9 +336,7 @@ Mathjax: &lt;a href=&quot;http://jianshu.io/p/378338f10263?comment=12766&quot;&g
    <link href="http://www.abuye.com/2014/05/12/mac-osx-apps"/>
    <updated>2014-05-12T00:00:00+08:00</updated>
    <id>http://www.abuye.com/2014/05/12/mac-osx-apps</id>
-   <content type="html">&lt;h2 id=&quot;mac-&quot;&gt;MAC 常用软件&lt;/h2&gt;
-
-&lt;h4 id=&quot;cleanmymac-2&quot;&gt;CleanMyMac 2&lt;/h4&gt;
+   <content type="html">&lt;h4 id=&quot;cleanmymac-2&quot;&gt;CleanMyMac 2&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&quot;http://macpaw.com/img/main/products/cleanmymac.png&quot; alt=&quot;CleanMyMac 2&quot; /&gt;&lt;br /&gt;
 Site: &lt;a href=&quot;http://macpaw.com/cleanmymac&quot;&gt;http://macpaw.com/cleanmymac&lt;/a&gt;&lt;br /&gt;
 Price: &lt;em&gt;$39.95&lt;/em&gt; &lt;a href=&quot;http://macpaw.com/store/cleanmymac&quot;&gt;Buy&lt;/a&gt;&lt;br /&gt;
@@ -353,6 +347,12 @@ Price: &lt;em&gt;$39.95&lt;/em&gt; &lt;a href=&quot;http://macpaw.com/store/clea
 &lt;p&gt;Site: &lt;a href=&quot;http://www.freemacsoft.net/appcleaner/&quot;&gt;http://www.freemacsoft.net/appcleaner/&lt;/a&gt;&lt;br /&gt;
 Price: free&lt;br /&gt;
 功能: 免费的删除工具，不能够删除LaunchPad上的图标，而且删之前会把相关文件都查出来，删的时候要注意点。CleanMyMac不能用的话，可以用这个。  &lt;/p&gt;
+
+&lt;h4 id=&quot;mindmanager&quot;&gt;MindManager&lt;/h4&gt;
+&lt;p&gt;Site: &lt;a href=&quot;http://www.mindjet.com/mindmanager/&quot;&gt;http://www.mindjet.com/mindmanager/&lt;/a&gt;&lt;br /&gt;
+Price: &lt;em&gt;$349&lt;/em&gt; &lt;a href=&quot;http://www.mindjet.com/mindmanager/buy/&quot;&gt;Buy&lt;/a&gt;&lt;br /&gt;
+Info: 思维导图&lt;br /&gt;
+破解版: &lt;!--TODO--&gt;  &lt;/p&gt;
 
 &lt;h4 id=&quot;spectacle&quot;&gt;Spectacle&lt;/h4&gt;
 &lt;p&gt;Site: &lt;a href=&quot;http://spectacleapp.com/&quot;&gt;http://spectacleapp.com/&lt;/a&gt;&lt;br /&gt;
@@ -549,9 +549,7 @@ Price: &lt;!--TODO--&gt;&lt;br /&gt;
    <link href="http://www.abuye.com/2014/05/12/linux-commands"/>
    <updated>2014-05-12T00:00:00+08:00</updated>
    <id>http://www.abuye.com/2014/05/12/linux-commands</id>
-   <content type="html">&lt;h2 id=&quot;linux-&quot;&gt;Linux 常用命令&lt;/h2&gt;
-
-&lt;h4 id=&quot;mac&quot;&gt;修改网卡MAC地址&lt;/h4&gt;
+   <content type="html">&lt;h4 id=&quot;mac&quot;&gt;修改网卡MAC地址&lt;/h4&gt;
 &lt;p&gt;举例：把网卡en1的mac地址改为&lt;code&gt;64-27-37-01-1E-0F&lt;/code&gt;。&lt;br /&gt;
 命令：&lt;/p&gt;
 
