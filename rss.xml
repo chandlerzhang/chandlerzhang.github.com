@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-        <title>阿布耶Blog</title>
-        <description>阿布耶Blog - Chandler</description>
+        <title>阿布也Blog</title>
+        <description>阿布也Blog - Chandler</description>
         <link>http://www.abuye.com</link>
         <link>http://www.abuye.com</link>
-        <lastBuildDate>2014-06-18T14:48:17+08:00</lastBuildDate>
-        <pubDate>2014-06-18T14:48:17+08:00</pubDate>
+        <lastBuildDate>2014-07-07T09:33:53+08:00</lastBuildDate>
+        <pubDate>2014-07-07T09:33:53+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -335,7 +335,7 @@ Mathjax: &lt;a href=&quot;http://jianshu.io/p/378338f10263?comment=12766&quot;&g
 &lt;p&gt;&lt;img src=&quot;http://macpaw.com/img/main/products/cleanmymac.png&quot; alt=&quot;CleanMyMac 2&quot; /&gt;&lt;br /&gt;
 Site: &lt;a href=&quot;http://macpaw.com/cleanmymac&quot;&gt;http://macpaw.com/cleanmymac&lt;/a&gt;&lt;br /&gt;
 Price: &lt;em&gt;$39.95&lt;/em&gt; &lt;a href=&quot;http://macpaw.com/store/cleanmymac&quot;&gt;Buy&lt;/a&gt;&lt;br /&gt;
-功能: 卸载软件，清理垃圾。卸载的干净，包括清除LaunchPad上的图标。&lt;br /&gt;
+功能: 卸载软件，清理垃圾。卸载的干净，包括清除LaunchPad上的图标。不过，没事还是不要随便清理，像user cache, system cache这些，一旦清理了，电脑就要慢上几天。&lt;br /&gt;
 破解版: &lt;!--TODO--&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;appcleaner&quot;&gt;AppCleaner&lt;/h4&gt;
